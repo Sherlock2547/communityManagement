@@ -1,0 +1,7 @@
+
+server:
+  ssl:
+    key-password: 123456
+    key-store: classpath:spring.keystore
+    key-alias: spring
+

@@ -1,0 +1,27 @@
+INSERT INTO  users  VALUES ('1', 'Sherlock', 'q12345');
+INSERT INTO  users  VALUES ('2', 'jim', 'f12345');
+INSERT INTO  users  VALUES ('3', 'tom', 'i12dg53');
+INSERT INTO  users  VALUES ('4', 'jack', 'dfg4123');
+
+
+
+INSERT INTO patient VALUES('1','阿斯顿',12345678901,'2019-09-07');
+INSERT INTO patient VALUES('2','史蒂芬',12344478901,'2019-09-07');
+INSERT INTO department VALUES('1','内科');
+INSERT INTO department VALUES('2','中医科');
+INSERT INTO department VALUES('3','儿科');
+INSERT INTO department VALUES('4','皮肤科');
+
+INSERT INTO  houses  VALUES ('00001','A1101',123.4,'豪华型三室两厅两卫','已出售');
+INSERT INTO  houses  VALUES ('00002','A1102',123.4,'豪华型三室两厅两卫','已出售');
+INSERT INTO  houses  VALUES ('00003','A1201',123.4,'豪华型三室两厅两卫','已出售');
+INSERT INTO  houses  VALUES ('00004','A1202',123.4,'豪华型三室两厅两卫','已出售');
+INSERT INTO  houses  VALUES ('00005','A1301',123.4,'豪华型三室两厅两卫','已出售');
+INSERT INTO  houses  VALUES ('00006','A1302',123.4,'豪华型三室两厅两卫','已出售');
+
+INSERT INTO  residents  VALUES ('00001','张伟',23,'男','A1101',360521199701011234,12345678901,'2019-09-07');
+INSERT INTO  residents  VALUES ('00002','李白',23,'男','A1102',360521199701011231,12335678901,'2019-07-07');
+INSERT INTO  residents  VALUES ('00003','李信',23,'男','A1201',360521199701011232,12345678301,'2019-04-07');
+INSERT INTO  residents  VALUES ('00004','韩信',23,'男','A1202',360521199701011233,12347678901,'2019-09-06');
+INSERT INTO  residents  VALUES ('00005','张飞',23,'男','A1301',360521199701011235,12345675801,'2019-09-01');
+INSERT INTO  residents  VALUES ('00006','廉颇',23,'男','A1302',360521199701011236,12348678101,'2019-05-07');

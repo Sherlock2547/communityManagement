@@ -1,0 +1,35 @@
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>登录</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container" style="width:1000px;height:400px">
+    <form action="/welcome"  th:object="${user}" method="post" >
+        <div class="jumbotron" >
+            <h1>Please Login First...</h1>
+        </div>
+
+        <table style="margin-top: 2px" class="table">
+            <tr class="table-primary">
+                <td><label >Account :</label></td>
+                <td><input type="text" th:field="*{name}" class="form-control" placeholder="Enter Your Name" required /></td>
+                <td th:if="${#fields.hasErrors('name')}" th:errors="*{name}">Account Error</td>
+            </tr>
+            <tr class="table-info">
+                <td><label >Password :</label></td>
+                <td><input type="password" th:field="*{pwd}" class="form-control" placeholder="Enter Your Password" required /></td>
+                <td th:if="${#fields.hasErrors('pwd')}" th:errors="*{pwd}">Password Error</td>
+            </tr>
+            <tr>
+                <td><button  class="btn btn-primary " type="submit">Login</button></td>
+            </tr>
+        </table>
+    </form>
+</div>
+</body>
+</html>
